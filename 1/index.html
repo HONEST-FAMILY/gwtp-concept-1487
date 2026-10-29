@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>강원테크노파크 — 검은 바위에서 미래를 캡니다</title>
+<link rel="icon" href="../shared/img/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="gnb">
+  <a class="logo" href="./"><img src="../shared/img/logo-white.png" alt="재단법인 강원테크노파크"></a>
+  <nav class="menu" aria-label="주 메뉴">
+    <a href="#">공고안내</a><a href="#">사업안내</a><a href="#">입주안내</a><a href="#">경영공시</a><a href="#">TP NOW</a><a href="#">TP소개</a>
+  </nav>
+  <div class="tools">
+    <button class="icon-btn" type="button" aria-label="검색"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.4 15.4 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></button>
+    <button class="icon-btn only-m" type="button" aria-label="전체 메뉴"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="stage">
+      <div class="shot">
+        <picture>
+          <source media="(max-width: 1023px)" srcset="board/hero-p-800.jpg 800w, board/hero-p.jpg 1200w" sizes="100vw">
+          <img src="board/hero.jpg" srcset="board/hero-1440.jpg 1440w, board/hero.jpg 2400w" sizes="100vw" alt="탄광의 검은 돌을 반으로 자른 단면, 그 돌을 간 회색 가루, 흰 세라믹 링을 나란히 놓은 정물 사진">
+        </picture>
+        <span class="tag" style="--x:.465;--y:.47;--px:.227;--py:.343">검은 돌</span>
+        <span class="tag" style="--x:.651;--y:.645;--px:.5;--py:.48">원료 가루</span>
+        <span class="tag r" style="--x:.814;--y:.25;--px:.79;--py:.585">세라믹 링</span>
+      </div>
+      <h1>검은 바위에서<br>미래를 캡니다</h1>
+    </div>
+    <p class="lead">태백은 탄광의 검은 돌을 자원으로, 강릉은 세라믹을 반도체 부품으로 바꿉니다. 강원테크노파크는 6개 시군 15개 시설에서 강원의 다음 산업을 키웁니다.</p>
+  </section>
+
+  <section class="now" aria-labelledby="now-h">
+    <div class="now-head">
+      <h2 id="now-h">지금 접수 중인 공고</h2>
+      <p class="count"><b id="liveCount">0</b>건</p>
+      <a class="all" href="#">공고 전체 보기</a>
+    </div>
+    <ol class="now-list" id="nowList"></ol>
+  </section>
+</main>
+
+<script src="../shared/base.js"></script>
+<script src="../shared/gw-map.js"></script>
+<script src="../shared/notices.js"></script>
+<script src="../shared/gw-core.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
