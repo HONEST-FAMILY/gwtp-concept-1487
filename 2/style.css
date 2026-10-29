@@ -50,7 +50,7 @@ img { display: block; max-width: 100%; height: auto; }
   margin: 0;
   width: fit-content;
   font-weight: 900;
-  font-size: 84px;
+  font-size: clamp(56px, 5.5vw, 84px);
   line-height: 1.12;
   letter-spacing: -0.03em;
   color: var(--green);
@@ -166,8 +166,7 @@ img { display: block; max-width: 100%; height: auto; }
   :root { --pad: 48px; }
   .menu { gap: 26px; }
   .call { display: none; }
-  .hero h1 { font-size: 72px; }
-  .model { width: min(70vw, 860px); right: -32px; top: 24px; }
+  .model { width: min(70vw, 860px); right: -48px; top: 24px; }
   .aside { top: 400px; width: 340px; }
   .hero { min-height: 680px; }
   .nlist { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 48px; }
