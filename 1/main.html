@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>강원테크노파크 — 검은 바위에서 미래를 캡니다</title>
+<link rel="icon" href="../shared/img/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header class="gnb" id="gnb">
+  <a class="logo" href="main.html"><img src="../shared/img/logo-white.png" alt="재단법인 강원테크노파크"></a>
+  <nav class="menu" aria-label="주 메뉴">
+    <a href="#notice">공고안내</a><a href="#biz">사업안내</a><a href="#place">입주안내</a><a href="https://www.gwtp.or.kr/" target="_blank" rel="noopener">경영공시</a><a href="#news">TP NOW</a><a href="https://www.gwtp.or.kr/" target="_blank" rel="noopener">TP소개</a>
+  </nav>
+  <div class="tools">
+    <a class="tel" href="tel:033-248-5600">033-248-5600</a>
+    <button class="icon-btn" type="button" aria-label="검색"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.4 15.4 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></button>
+    <button class="icon-btn only-m" type="button" aria-label="전체 메뉴"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="stage">
+      <div class="shot">
+        <picture>
+          <source media="(max-width: 1023px)" srcset="board/hero-p-800.jpg 800w, board/hero-p.jpg 1200w" sizes="100vw">
+          <img src="board/hero.jpg" srcset="board/hero-1440.jpg 1440w, board/hero.jpg 2400w" sizes="100vw" alt="탄광의 검은 돌을 반으로 자른 단면, 그 돌을 간 회색 가루, 흰 세라믹 링을 나란히 놓은 정물 사진">
+        </picture>
+        <a class="tag" href="#place" data-city="태백시" style="--x:.465;--y:.47;--px:.227;--py:.343">검은 돌</a>
+        <a class="tag" href="#place" data-city="강릉시" style="--x:.651;--y:.645;--px:.5;--py:.48">원료 가루</a>
+        <a class="tag r" href="#biz-semi" style="--x:.814;--y:.25;--px:.79;--py:.585">세라믹 링</a>
+      </div>
+      <h1>검은 바위에서<br>미래를 캡니다</h1>
+    </div>
+    <p class="lead">태백은 탄광의 검은 돌을 자원으로, 강릉은 세라믹을 반도체 부품으로 바꿉니다. 강원테크노파크는 6개 시군 15개 시설에서 강원의 다음 산업을 키웁니다.</p>
+  </section>
+
+  <section class="notice" id="notice" aria-labelledby="notice-h">
+    <div class="notice-head">
+      <h2 id="notice-h">지금 접수 중인 공고</h2>
+      <p class="count"><b id="liveCount">0</b>건</p>
+      <p class="asof" id="noticeAsof"></p>
+      <dl class="nstat" id="nstat"></dl>
+      <a class="all" id="noticeAll" href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01b&amp;keyvalue=sub01" target="_blank" rel="noopener">공고 전체 보기</a>
+    </div>
+    <div class="notice-body">
+      <div class="tabs" role="tablist" aria-label="공고 종류">
+        <button class="tab is-on" type="button" role="tab" aria-selected="true" data-tab="live">접수 중 <span id="tabLive"></span></button>
+        <button class="tab" type="button" role="tab" aria-selected="false" data-tab="notice">공지사항</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" data-tab="bid">계약공고</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" data-tab="jobs">채용공고</button>
+      </div>
+      <div class="filters" id="filters" aria-label="분야로 거르기"></div>
+      <ol class="nlist" id="nlist"></ol>
+      <p class="nmore" id="nmore"></p>
+    </div>
+  </section>
+
+  <section class="biz" id="biz" aria-labelledby="biz-h">
+    <div class="rail-wrap"><div class="rail-box">
+    <div class="biz-head">
+      <h2 id="biz-h">여섯 개 첨단산업의<br>생태계를 만듭니다</h2>
+      <blockquote class="quote">
+        <p>“반도체, 바이오, 디지털헬스, 수소, 모빌리티, AI 등 첨단산업 분야의 생태계를 조성”</p>
+        <cite>강원테크노파크 원장 인사말</cite>
+      </blockquote>
+    </div>
+    <div class="biz-track" id="bizTrack">
+      <article class="item" id="biz-semi" data-sector="반도체">
+        <figure class="ph"><img src="board/obj-semi.jpg" alt="흰 세라믹 링" width="640" height="640"><figcaption>흰 세라믹 링</figcaption></figure>
+        <div class="tx">
+          <h3>반도체</h3>
+          <p class="say">반도체 부재용 대형 세라믹 제품 제조 지원</p>
+          <p class="say2">국내 반도체 소재·부품·장비 기업의 아이템 실증 지원과 시장연계형 플랫폼 구축</p>
+          <dl class="facts">
+            <div><dt>접수 중 공고</dt><dd><a class="cnt" href="#notice" data-filter="반도체"><b>0</b>건</a></dd></div>
+            <div><dt>관련 권역</dt><dd>강릉 세라믹 특화<br>태백 경석자원 특화</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="item" id="biz-bio" data-sector="바이오">
+        <figure class="ph"><img src="board/obj-bio.jpg" alt="젖빛 유리 바이알" width="640" height="640"><figcaption>젖빛 유리 바이알</figcaption></figure>
+        <div class="tx">
+          <h3>바이오</h3>
+          <p class="say">천연물소재 전주기 표준화 허브의 기능 정립 및 활성화 기반 마련</p>
+          <p class="say2">바이오 의약품의 초기단계 개발·사업화를 위한 공간·시설 등의 통합 지원</p>
+          <dl class="facts">
+            <div><dt>접수 중 공고</dt><dd><a class="cnt" href="#notice" data-filter="바이오"><b>0</b>건</a></dd></div>
+            <div><dt>관련 권역</dt><dd>춘천 바이오 특화<br>홍천 항체의약품소재 특화</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="item" id="biz-health" data-sector="디지털헬스·의료기기">
+        <figure class="ph"><img src="board/obj-health.jpg" alt="몸에 붙이는 심전도 패치" width="640" height="640"><figcaption>심전도 패치</figcaption></figure>
+        <div class="tx">
+          <h3>디지털헬스</h3>
+          <p class="say">보건의료데이터 기반 실증 및 글로벌 협력 기반 산업 생태계 조성</p>
+          <dl class="facts">
+            <div><dt>접수 중 공고</dt><dd><a class="cnt" href="#notice" data-filter="디지털헬스·의료기기"><b>0</b>건</a></dd></div>
+            <div><dt>관련 권역</dt><dd>원주 디지털헬스케어 특화</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="item" id="biz-h2" data-sector="수소·에너지">
+        <figure class="ph"><img src="board/obj-h2.jpg" alt="서리 앉은 극저온 밸브" width="640" height="640"><figcaption>극저온 밸브</figcaption></figure>
+        <div class="tx">
+          <h3>수소</h3>
+          <p class="say">국내 액화수소 제품의 신뢰성 평가를 위한 센터 설계 및 구축</p>
+          <p class="say2">수소전기차량 및 수소충전소의 보급 확대·운영</p>
+          <dl class="facts">
+            <div><dt>접수 중 공고</dt><dd><a class="cnt" href="#notice" data-filter="수소·에너지"><b>0</b>건</a></dd></div>
+            <div><dt>관련 권역</dt><dd>삼척 액화수소 특화</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="item" id="biz-mob" data-sector="모빌리티">
+        <figure class="ph"><img src="board/obj-mob.jpg" alt="전기차 구동모터 고정자" width="640" height="640"><figcaption>구동모터 고정자</figcaption></figure>
+        <div class="tx">
+          <h3>모빌리티</h3>
+          <p class="say">미래차 전주기 실증 지원 체계 구축을 통한 미래차 산업 중심지 도약</p>
+          <p class="say2">전기차 배터리 팩 재제조를 위한 센터 구축과 특성화 장비를 이용한 재제조 배터리 안전성 및 신뢰성 확보</p>
+          <dl class="facts">
+            <div><dt>접수 중 공고</dt><dd><a class="cnt" href="#notice" data-filter="모빌리티"><b>0</b>건</a></dd></div>
+            <div><dt>공고 대상</dt><dd>도내 전체, 도외 가능</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="item" id="biz-ai" data-sector="ICT·데이터">
+        <figure class="ph"><img src="board/obj-ai.jpg" alt="방열판을 얹은 AI 연산 모듈" width="640" height="640"><figcaption>AI 연산 모듈</figcaption></figure>
+        <div class="tx">
+          <h3>AI</h3>
+          <p class="say">소양강댐의 냉수를 자원으로 한 클라우드데이터센터 7기가 집적단지인 K-클라우드파크를 조성하여 데이터 산업 융합밸리 구성</p>
+          <p class="say2">지역 주도 AI 대전환을 통한 바이오·헬스케어 산업 경쟁력 강화 및 지속가능 생태계 구축</p>
+          <dl class="facts">
+            <div><dt>ICT·데이터 공고</dt><dd><a class="cnt" href="#notice" data-filter="ICT·데이터"><b>0</b>건</a></dd></div>
+            <div><dt>관련 권역</dt><dd>춘천 소양강댐 K-클라우드파크</dd></div>
+          </dl>
+        </div>
+      </article>
+    </div>
+    <div class="rail-bar" aria-hidden="true"><i id="railBar"></i></div>
+    <p class="biz-src">사업 문장 출처: 강원테크노파크 2026 홍보영상 자막</p>
+    </div></div>
+  </section>
+
+  <section class="eq" id="eq" aria-labelledby="eq-h">
+    <div class="eq-num">
+      <h2 id="eq-h">강원 연구장비를<br>함께 씁니다</h2>
+      <div class="nums">
+        <p><b class="big" data-count="29">29</b><span>G-EQNET 등록기관</span></p>
+        <p><b class="big" data-count="1143">1,143</b><span>G-EQNET 공동장비</span></p>
+      </div>
+      <p class="eq-asof">2026년 10월 28일 기준, 강원연구장비 G-EQNET</p>
+      <a class="go" href="https://eqnet.gwtp.or.kr/" target="_blank" rel="noopener">장비 찾고 예약하기</a>
+    </div>
+    <div class="eq-links" id="eqLinks"></div>
+  </section>
+
+  <div class="light">
+    <section class="place" id="place" aria-labelledby="place-h">
+      <div class="place-head">
+        <h2 id="place-h">6개 시군 15개 시설에<br>입주할 수 있습니다</h2>
+        <p class="place-sub" id="placeSub"></p>
+      </div>
+      <div class="ctabs" id="ctabs" role="tablist" aria-label="시군으로 거르기"></div>
+      <ul class="pgrid" id="pgrid"></ul>
+    </section>
+
+    <section class="news" id="news" aria-labelledby="news-h">
+      <div class="news-head">
+        <h2 id="news-h">강원테크노파크 소식</h2>
+        <a class="all dark" href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub06b&amp;keyvalue=sub06" target="_blank" rel="noopener">보도자료 전체 보기</a>
+      </div>
+      <div class="press" id="press"></div>
+      <div class="boards">
+        <div class="bcol">
+          <div class="board-head"><h3>공지사항</h3><a class="all dark" id="boardAll" href="#" target="_blank" rel="noopener">공지사항 더 보기</a></div>
+          <ol class="blist" id="blist"></ol>
+        </div>
+        <div class="bcol">
+          <div class="board-head"><h3>모집공고</h3><a class="all dark" id="recruitAll" href="#" target="_blank" rel="noopener">모집공고 더 보기</a></div>
+          <ol class="blist" id="rlist"></ol>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="foot" id="foot">
+  <div class="foot-top">
+    <img class="foot-logo" src="../shared/img/logo-white.png" alt="재단법인 강원테크노파크">
+    <nav class="foot-menu" aria-label="바닥 메뉴">
+      <a href="#notice">공고안내</a><a href="#biz">사업안내</a><a href="#place">입주안내</a><a href="https://www.gwtp.or.kr/" target="_blank" rel="noopener">경영공시</a><a href="#news">TP NOW</a><a href="https://www.gwtp.or.kr/" target="_blank" rel="noopener">TP소개</a>
+    </nav>
+  </div>
+  <div class="foot-mid">
+    <div class="foot-info">
+      <p class="foot-name">재단법인 강원테크노파크</p>
+      <p id="footAddr">(24206) 강원특별자치도 춘천시 신북읍 신북로 61-10 강원테크노파크 기술혁신지원센터</p>
+      <p>대표전화 <a href="tel:033-248-5600">033-248-5600</a></p>
+      <p class="foot-legal"><a href="https://www.gwtp.or.kr/" target="_blank" rel="noopener">이용약관</a><a class="strong" href="https://www.gwtp.or.kr/" target="_blank" rel="noopener">개인정보처리방침</a><a href="https://www.gwtp.or.kr/" target="_blank" rel="noopener">이메일무단수집거부</a></p>
+    </div>
+    <div class="foot-sites">
+      <p class="foot-sites-h">관련 사이트</p>
+      <ul id="footSites"></ul>
+    </div>
+  </div>
+  <p class="copy">Copyright © Gangwon Technopark. All rights reserved.</p>
+</footer>
+
+<script src="../shared/base.js"></script>
+<script src="../shared/gw-map.js"></script>
+<script src="../shared/notices.js"></script>
+<script src="../shared/gw-core.js"></script>
+<script src="../shared/home-lists.js"></script>
+<script src="../shared/facilities.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

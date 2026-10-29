@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>강원테크노파크 — 청정 자연 위에 첨단을 더하다</title>
+<link rel="icon" href="../shared/img/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header class="gnb" data-gnb>
+  <a class="logo" href="./main.html"><img src="../shared/img/logo-navy.png" alt="강원테크노파크" width="300" height="72"></a>
+  <nav class="menu" id="menu" aria-label="주 메뉴">
+    <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01a&amp;keyvalue=sub01">공고안내</a>
+    <a href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub02a&amp;keyvalue=sub02">사업안내</a>
+    <a href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub04a&amp;keyvalue=sub04">입주안내</a>
+    <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub05a&amp;keyvalue=sub05">경영공시</a>
+    <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub06a&amp;keyvalue=sub06">TP NOW</a>
+    <a href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub07a&amp;keyvalue=sub07">TP소개</a>
+  </nav>
+  <a class="call" href="tel:033-248-5600">대표전화 033-248-5600</a>
+  <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false" data-menu-btn>전체 메뉴</button>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>청정 자연 위에<br>첨단을 더하다</h1>
+    <div class="aside">
+      <p>강원테크노파크는 6개 시군 15개 시설에서 반도체, 바이오, 디지털헬스, 수소, 모빌리티, AI 기업을 키웁니다.</p>
+      <a class="go" href="#notices" data-go>지금 접수 중인 공고 <b data-live>12</b>건</a>
+      <p class="hint" aria-live="polite" data-hint>지형 위 이름표를 누르면 그 시군의 공고와 입주 시설만 아래에 모아 보여 줍니다.</p>
+    </div>
+    <figure class="model">
+      <picture>
+        <source media="(max-width: 1023px)" srcset="board/hero-m.jpg" width="1717" height="2673">
+        <img src="board/hero.jpg" width="2339" height="1836" alt="강원특별자치도의 실제 고도와 경계로 만든 지형 모형. 잘린 면에 지층과 검은 탄층이 보이고, 여섯 거점이 표시되어 있다.">
+      </picture>
+      <ol class="pins">
+        <li class="pin" data-pin="춘천시" style="--x:27.98;--y:39.59;--l:9;--mx:33.55;--my:32.72;--ml:6"><i></i><button type="button" class="tag" data-city="춘천시" aria-pressed="false"><b>춘천</b><em> 바이오</em></button></li>
+        <li class="pin" data-pin="홍천군" style="--x:32.37;--y:53.25;--l:7;--mx:28.79;--my:44.41;--ml:5"><i></i><button type="button" class="tag" data-city="홍천군" aria-pressed="false"><b>홍천</b><em> 항체의약품소재</em></button></li>
+        <li class="pin" data-pin="원주시" style="--x:31.92;--y:70.61;--l:8;--mx:15.29;--my:56.66;--ml:5"><i></i><button type="button" class="tag" data-city="원주시" aria-pressed="false"><b>원주</b><em> 디지털헬스케어</em></button></li>
+        <li class="pin flip-m" data-pin="강릉시" style="--x:73.56;--y:46.44;--l:9;--mx:89.43;--my:56.89;--ml:6"><i></i><button type="button" class="tag" data-city="강릉시" aria-pressed="false"><b>강릉</b><em> 세라믹</em></button></li>
+        <li class="pin flip flip-m" data-pin="삼척시" style="--x:85.5;--y:64.44;--l:12;--mx:91.59;--my:75.17;--ml:6"><i></i><button type="button" class="tag" data-city="삼척시" aria-pressed="false"><b>삼척</b><em> 액화수소</em></button></li>
+        <li class="pin flip flip-m" data-pin="태백시" style="--x:78.96;--y:78.9;--l:8;--mx:70.89;--my:82.8;--ml:6"><i></i><button type="button" class="tag" data-city="태백시" aria-pressed="false"><b>태백</b><em> 경석자원</em></button></li>
+      </ol>
+    </figure>
+    <ul class="legend">
+      <li><button type="button" data-city="춘천시" aria-pressed="false"><b>춘천</b>바이오</button></li>
+      <li><button type="button" data-city="강릉시" aria-pressed="false"><b>강릉</b>세라믹</button></li>
+      <li><button type="button" data-city="홍천군" aria-pressed="false"><b>홍천</b>항체의약품소재</button></li>
+      <li><button type="button" data-city="삼척시" aria-pressed="false"><b>삼척</b>액화수소</button></li>
+      <li><button type="button" data-city="원주시" aria-pressed="false"><b>원주</b>디지털헬스케어</button></li>
+      <li><button type="button" data-city="태백시" aria-pressed="false"><b>태백</b>경석자원</button></li>
+    </ul>
+  </section>
+
+  <section class="sec notices" id="notices" aria-labelledby="nt">
+    <div class="n-side">
+      <h2 id="nt">공고 안내</h2>
+      <p class="n-big"><b data-live data-count>12</b><span>건 접수 중</span></p>
+      <p class="n-asof" data-asof>오늘 기준, 마감이 가까운 순서입니다.</p>
+      <p class="n-label" id="cityLabel">시군으로 거르기</p>
+      <div class="chips" role="group" aria-labelledby="cityLabel" data-chips="notices">
+        <button type="button" data-city="" aria-pressed="true">전체</button>
+        <button type="button" data-city="춘천시" aria-pressed="false">춘천</button>
+        <button type="button" data-city="홍천군" aria-pressed="false">홍천</button>
+        <button type="button" data-city="원주시" aria-pressed="false">원주</button>
+        <button type="button" data-city="강릉시" aria-pressed="false">강릉</button>
+        <button type="button" data-city="태백시" aria-pressed="false">태백</button>
+        <button type="button" data-city="삼척시" aria-pressed="false">삼척</button>
+      </div>
+      <p class="n-label n-label2" id="secLabel">분야로 거르기</p>
+      <div class="chips" role="group" aria-labelledby="secLabel" data-sector-chips></div>
+      <p class="n-note" data-note>시설 입주 공고는 그 시설이 있는 시군, 분야 공고는 그 분야 특화 권역으로 묶습니다.</p>
+    </div>
+    <div class="n-board">
+      <div class="tabs" role="tablist" aria-label="공고 종류">
+        <button type="button" role="tab" id="tab-live" aria-selected="true" aria-controls="rows" data-tab="live">접수 중 <b data-live>12</b></button>
+        <button type="button" role="tab" id="tab-notice" aria-selected="false" aria-controls="rows" data-tab="notice">공지사항</button>
+        <button type="button" role="tab" id="tab-bid" aria-selected="false" aria-controls="rows" data-tab="bid">계약공고</button>
+        <button type="button" role="tab" id="tab-jobs" aria-selected="false" aria-controls="rows" data-tab="jobs">채용공고</button>
+      </div>
+      <ol class="rows" id="rows" role="tabpanel" aria-labelledby="tab-live" data-rows></ol>
+      <div class="n-foot">
+        <p data-foot-note>마감 7일 이내 공고는 파란 면으로 표시합니다.</p>
+        <a data-board href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01b&amp;keyvalue=sub01">모집공고 전체 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec biz" id="biz" aria-labelledby="bt">
+    <div class="sec-head">
+      <h2 id="bt">주요 사업</h2>
+      <p class="lead">“반도체, 바이오, 디지털헬스, 수소, 모빌리티, AI 등 첨단산업 분야의 생태계를 조성하며” <span>원장 인사말</span></p>
+    </div>
+    <div class="sheet">
+      <article class="dwg" data-dwg="semi">
+        <header class="dh">
+          <h3>반도체</h3>
+          <p class="obj">세라믹 링 단면</p>
+          <a class="cnt" href="#notices" data-sector="반도체">접수 중 공고 <b data-sc="반도체">0</b>건</a>
+        </header>
+        <figure class="fig">
+          <svg class="obj-svg" viewBox="0 0 120 120" style="left:23.214%;top:3.125%;width:53.571%;height:93.75%" role="img" aria-label="반도체 세라믹 링 단면"><g stroke="#191A19" stroke-width="1.5" stroke-linejoin="miter" stroke-linecap="butt"><rect x="30" y="65" width="60" height="21" fill="#8E9690"/><polygon points="10,56 24,56 24,65 30,65 30,86 10,86" fill="#EDF0EE"/><polygon points="110,56 96,56 96,65 90,65 90,86 110,86" fill="#EDF0EE"/><rect x="25.5" y="62" width="69" height="3" fill="#191A19"/><rect x="6" y="86" width="108" height="8" fill="#1F3D30"/><line x1="10" y1="44" x2="110" y2="44"/><polygon points="10,44 16,41.5 16,46.5" fill="#191A19" stroke="none"/><polygon points="110,44 104,41.5 104,46.5" fill="#191A19" stroke="none"/><line x1="10" y1="38" x2="10" y2="54"/><line x1="110" y1="38" x2="110" y2="54"/><line x1="60" y1="30" x2="60" y2="104" stroke="#8E9690" stroke-dasharray="7 3 1.5 3"/></g></svg>
+          <span class="ld vr ht" data-side="L" data-up="1" style="left:22.321%;top:40.625%;width:18.75%;height:12.109%"></span><span class="dt" style="left:41.071%;top:52.734%"></span><span class="lb l" style="right:79.018%;top:40.625%">웨이퍼</span><span class="ld vl ht" data-side="R" data-up="1" style="left:61.161%;top:25.0%;width:16.518%;height:12.5%"></span><span class="dt" style="left:61.161%;top:37.5%"></span><span class="lb r" style="left:79.018%;top:25.0%">링 지름</span><span class="ld h" data-side="R" data-up="0" style="left:69.196%;top:62.5%;width:8.482%;height:0.0%"></span><span class="dt" style="left:69.196%;top:62.5%"></span><span class="lb r" style="left:79.018%;top:62.5%">세라믹 링</span>
+        </figure>
+        <blockquote class="q">반도체 부재용 대형 세라믹 제품 제조 지원</blockquote>
+        <div class="rgs"><span class="rg-k">관련 권역</span><button type="button" class="rg" data-city="강릉시" aria-pressed="false">강릉 세라믹 특화</button><span class="rg-place">반도체부재공장</span></div>
+      </article>
+      <article class="dwg" data-dwg="bio">
+        <header class="dh">
+          <h3>바이오</h3>
+          <p class="obj">바이알 단면</p>
+          <a class="cnt" href="#notices" data-sector="바이오">접수 중 공고 <b data-sc="바이오">0</b>건</a>
+        </header>
+        <figure class="fig">
+          <svg class="obj-svg" viewBox="0 0 120 120" style="left:23.214%;top:3.125%;width:53.571%;height:93.75%" role="img" aria-label="바이오 바이알 단면"><g stroke="#191A19" stroke-width="1.5" stroke-linejoin="miter" stroke-linecap="butt"><path d="M39.5 66 L80.5 66 L80.5 99 Q80.5 102.5 77 102.5 L66 102.5 Q60 99.5 54 102.5 L43 102.5 Q39.5 102.5 39.5 99 Z" fill="#24558C"/><path d="M44 34 L44 40 Q36 42 36 50 L36 101 Q36 106 41 106 L79 106 Q84 106 84 101 L84 50 Q84 42 76 40 L76 34" fill="none"/><path d="M47.5 35 L47.5 42.5 Q39.5 44.5 39.5 52 L39.5 99 Q39.5 102.5 43 102.5 L54 102.5 Q60 99.5 66 102.5 L77 102.5 Q80.5 102.5 80.5 99 L80.5 52 Q80.5 44.5 72.5 42.5 L72.5 35" fill="none"/><rect x="47.5" y="22" width="25" height="15" fill="#191A19"/><polygon points="42,34 42,16 54,16 54,20 46,20 46,34" fill="#8E9690"/><polygon points="78,34 78,16 66,16 66,20 74,20 74,34" fill="#8E9690"/><line x1="39.5" y1="66" x2="80.5" y2="66"/><line x1="60" y1="8" x2="60" y2="112" stroke="#8E9690" stroke-dasharray="7 3 1.5 3"/></g></svg>
+          <span class="ld h" data-side="L" data-up="0" style="left:22.321%;top:17.188%;width:20.536%;height:0.0%"></span><span class="dt" style="left:42.857%;top:17.188%"></span><span class="lb l" style="right:79.018%;top:17.188%">알루미늄 캡</span><span class="ld h" data-side="R" data-up="0" style="left:54.464%;top:24.219%;width:23.214%;height:0.0%"></span><span class="dt" style="left:54.464%;top:24.219%"></span><span class="lb r" style="left:79.018%;top:24.219%">고무마개</span><span class="ld h" data-side="L" data-up="0" style="left:22.321%;top:65.625%;width:17.746%;height:0.0%"></span><span class="dt" style="left:40.067%;top:65.625%"></span><span class="lb l" style="right:79.018%;top:65.625%">유리병 벽</span><span class="ld h" data-side="R" data-up="0" style="left:54.464%;top:73.438%;width:23.214%;height:0.0%"></span><span class="dt" style="left:54.464%;top:73.438%"></span><span class="lb r" style="left:79.018%;top:73.438%">약액</span>
+        </figure>
+        <blockquote class="q">천연물소재 전주기 표준화 허브의 기능 정립 및 활성화 기반 마련</blockquote>
+        <div class="rgs"><span class="rg-k">관련 권역</span><button type="button" class="rg" data-city="춘천시" aria-pressed="false">춘천 바이오 특화</button><button type="button" class="rg" data-city="홍천군" aria-pressed="false">홍천 항체의약품소재 특화</button></div>
+      </article>
+      <article class="dwg" data-dwg="health">
+        <header class="dh">
+          <h3>디지털헬스</h3>
+          <p class="obj">심전도 패치 단면</p>
+          <a class="cnt" href="#notices" data-sector="디지털헬스·의료기기">접수 중 공고 <b data-sc="디지털헬스·의료기기">0</b>건<span class="sl">디지털헬스·의료기기</span></a>
+        </header>
+        <figure class="fig">
+          <svg class="obj-svg" viewBox="0 0 120 120" style="left:23.214%;top:3.125%;width:53.571%;height:93.75%" role="img" aria-label="디지털헬스 심전도 패치 단면"><g stroke="#191A19" stroke-width="1.5" stroke-linejoin="miter" stroke-linecap="butt"><path d="M4 92 Q20 89 36 92 T68 92 T100 92 T116 92 L116 112 L4 112 Z" fill="#8E9690"/><path d="M12 84 L12 72 Q12 54 34 52 L86 52 Q108 54 108 72 L108 84 Z" fill="#EDF0EE"/><rect x="12" y="84" width="96" height="6" fill="#EDF0EE"/><rect x="20" y="84" width="16" height="6" fill="#24558C"/><rect x="84" y="84" width="16" height="6" fill="#24558C"/><rect x="20" y="81" width="16" height="3" fill="#191A19"/><rect x="84" y="81" width="16" height="3" fill="#191A19"/><rect x="16" y="77" width="88" height="4" fill="#1F3D30"/><rect x="38" y="70" width="14" height="7" fill="#191A19"/><rect x="62" y="62" width="24" height="15" fill="#8E9690"/><line x1="28" y1="36" x2="28" y2="81" stroke="#8E9690" stroke-dasharray="7 3 1.5 3"/><line x1="92" y1="36" x2="92" y2="81" stroke="#8E9690" stroke-dasharray="7 3 1.5 3"/><polyline points="14,28 34,28 40,28 44,14 49,40 53,24 56,28 106,28" fill="none"/></g></svg>
+          <span class="ld h" data-side="L" data-up="0" style="left:22.321%;top:14.062%;width:20.536%;height:0.0%"></span><span class="dt" style="left:42.857%;top:14.062%"></span><span class="lb l" style="right:79.018%;top:14.062%">심전도 파형</span><span class="ld vr ht" data-side="L" data-up="1" style="left:22.321%;top:39.062%;width:20.982%;height:21.484%"></span><span class="dt" style="left:43.304%;top:60.547%"></span><span class="lb l" style="right:79.018%;top:39.062%">칩</span><span class="ld h" data-side="L" data-up="0" style="left:22.321%;top:71.094%;width:12.5%;height:0.0%"></span><span class="dt" style="left:34.821%;top:71.094%"></span><span class="lb l" style="right:79.018%;top:71.094%">전극</span><span class="ld vl ht" data-side="R" data-up="1" style="left:66.964%;top:50.0%;width:10.714%;height:14.844%"></span><span class="dt" style="left:66.964%;top:64.844%"></span><span class="lb r" style="left:79.018%;top:50.0%">회로 기판</span><span class="ld h" data-side="R" data-up="0" style="left:69.643%;top:71.094%;width:8.036%;height:0.0%"></span><span class="dt" style="left:69.643%;top:71.094%"></span><span class="lb r" style="left:79.018%;top:71.094%">접착층</span><span class="ld vl hb" data-side="R" data-up="0" style="left:66.071%;top:85.938%;width:11.607%;height:5.469%"></span><span class="dt" style="left:66.071%;top:85.938%"></span><span class="lb r" style="left:79.018%;top:91.406%">피부</span>
+        </figure>
+        <blockquote class="q">보건의료데이터 기반 실증 및 글로벌 협력 기반 산업 생태계 조성</blockquote>
+        <div class="rgs"><span class="rg-k">관련 권역</span><button type="button" class="rg" data-city="원주시" aria-pressed="false">원주 디지털헬스케어 특화</button></div>
+      </article>
+      <article class="dwg" data-dwg="h2">
+        <header class="dh">
+          <h3>수소</h3>
+          <p class="obj">액화수소 탱크 단면</p>
+          <a class="cnt" href="#notices" data-sector="수소·에너지">접수 중 공고 <b data-sc="수소·에너지">0</b>건<span class="sl">수소·에너지</span></a>
+        </header>
+        <figure class="fig">
+          <svg class="obj-svg" viewBox="0 0 120 120" style="left:23.214%;top:3.125%;width:53.571%;height:93.75%" role="img" aria-label="수소 액화수소 탱크 단면"><g stroke="#191A19" stroke-width="1.5" stroke-linejoin="miter" stroke-linecap="butt"><path d="M26 48.0 A34.0 34.0 0 0 1 94 48.0 L94 76.0 A34.0 34.0 0 0 1 26 76.0 Z" fill="#8E9690"/><path d="M29 48.0 A31.0 31.0 0 0 1 91 48.0 L91 76.0 A31.0 31.0 0 0 1 29 76.0 Z" fill="#EDF0EE"/><path d="M32.5 48.0 A27.5 27.5 0 0 1 87.5 48.0 L87.5 76.0 A27.5 27.5 0 0 1 32.5 76.0 Z" fill="none"/><path d="M35.5 48.0 A24.5 24.5 0 0 1 84.5 48.0 L84.5 76.0 A24.5 24.5 0 0 1 35.5 76.0 Z" fill="#8E9690"/><path d="M38.5 48.0 A21.5 21.5 0 0 1 81.5 48.0 L81.5 76.0 A21.5 21.5 0 0 1 38.5 76.0 Z" fill="#EDF0EE"/><path d="M38.5 66 L81.5 66 L81.5 76.0 A21.5 21.5 0 0 1 38.5 76.0 Z" fill="#24558C"/><line x1="38.5" y1="66" x2="81.5" y2="66"/><rect x="56.5" y="4" width="7" height="24" fill="#EDF0EE"/><rect x="51" y="2" width="18" height="6" fill="#8E9690"/><line x1="44" y1="100" x2="40" y2="106.5"/><line x1="76" y1="100" x2="80" y2="106.5"/><line x1="60" y1="30" x2="60" y2="116" stroke="#8E9690" stroke-dasharray="7 3 1.5 3"/></g></svg>
+          <span class="ld vr ht" data-side="L" data-up="1" style="left:22.321%;top:29.688%;width:13.17%;height:10.938%"></span><span class="dt" style="left:35.491%;top:40.625%"></span><span class="lb l" style="right:79.018%;top:29.688%">외벽</span><span class="ld h" data-side="L" data-up="0" style="left:22.321%;top:51.562%;width:14.732%;height:0.0%"></span><span class="dt" style="left:37.054%;top:51.562%"></span><span class="lb l" style="right:79.018%;top:51.562%">진공 단열층</span><span class="ld vr hb" data-side="L" data-up="0" style="left:22.321%;top:62.5%;width:17.411%;height:10.938%"></span><span class="dt" style="left:39.732%;top:62.5%"></span><span class="lb l" style="right:79.018%;top:73.438%">내벽</span><span class="ld h" data-side="R" data-up="0" style="left:54.464%;top:68.75%;width:23.214%;height:0.0%"></span><span class="dt" style="left:54.464%;top:68.75%"></span><span class="lb r" style="left:79.018%;top:68.75%">액화수소<br>영하 253도</span>
+        </figure>
+        <blockquote class="q">국내 액화수소 제품의 신뢰성 평가를 위한 센터 설계 및 구축</blockquote>
+        <div class="rgs"><span class="rg-k">관련 권역</span><button type="button" class="rg" data-city="삼척시" aria-pressed="false">삼척 액화수소 특화</button></div>
+      </article>
+      <article class="dwg" data-dwg="mobility">
+        <header class="dh">
+          <h3>모빌리티</h3>
+          <p class="obj">전기차 구동모터 단면</p>
+          <a class="cnt" href="#notices" data-sector="모빌리티">접수 중 공고 <b data-sc="모빌리티">0</b>건</a>
+        </header>
+        <figure class="fig">
+          <svg class="obj-svg" viewBox="0 0 120 120" style="left:23.214%;top:3.125%;width:53.571%;height:93.75%" role="img" aria-label="모빌리티 전기차 구동모터 단면"><g stroke="#191A19" stroke-width="1.5" stroke-linejoin="miter" stroke-linecap="butt"><circle cx="60" cy="60" r="52" fill="#8E9690"/><circle cx="60" cy="60" r="36.5" fill="#EDF0EE"/><polygon points="97.50,57.92 97.50,62.08 108.00,62.60 108.00,57.40" fill="#1F3D30"/><polygon points="96.76,67.70 95.68,71.71 105.69,74.93 107.04,69.91" fill="#1F3D30"/><polygon points="93.52,76.95 91.44,80.55 100.27,86.25 102.87,81.75" fill="#1F3D30"/><polygon points="87.99,85.05 85.05,87.99 92.10,95.78 95.78,92.10" fill="#1F3D30"/><polygon points="80.55,91.44 76.95,93.52 81.75,102.87 86.25,100.27" fill="#1F3D30"/><polygon points="71.71,95.68 67.70,96.76 69.91,107.04 74.93,105.69" fill="#1F3D30"/><polygon points="62.08,97.50 57.92,97.50 57.40,108.00 62.60,108.00" fill="#1F3D30"/><polygon points="52.30,96.76 48.29,95.68 45.07,105.69 50.09,107.04" fill="#1F3D30"/><polygon points="43.05,93.52 39.45,91.44 33.75,100.27 38.25,102.87" fill="#1F3D30"/><polygon points="34.95,87.99 32.01,85.05 24.22,92.10 27.90,95.78" fill="#1F3D30"/><polygon points="28.56,80.55 26.48,76.95 17.13,81.75 19.73,86.25" fill="#1F3D30"/><polygon points="24.32,71.71 23.24,67.70 12.96,69.91 14.31,74.93" fill="#1F3D30"/><polygon points="22.50,62.08 22.50,57.92 12.00,57.40 12.00,62.60" fill="#1F3D30"/><polygon points="23.24,52.30 24.32,48.29 14.31,45.07 12.96,50.09" fill="#1F3D30"/><polygon points="26.48,43.05 28.56,39.45 19.73,33.75 17.13,38.25" fill="#1F3D30"/><polygon points="32.01,34.95 34.95,32.01 27.90,24.22 24.22,27.90" fill="#1F3D30"/><polygon points="39.45,28.56 43.05,26.48 38.25,17.13 33.75,19.73" fill="#1F3D30"/><polygon points="48.29,24.32 52.30,23.24 50.09,12.96 45.07,14.31" fill="#1F3D30"/><polygon points="57.92,22.50 62.08,22.50 62.60,12.00 57.40,12.00" fill="#1F3D30"/><polygon points="67.70,23.24 71.71,24.32 74.93,14.31 69.91,12.96" fill="#1F3D30"/><polygon points="76.95,26.48 80.55,28.56 86.25,19.73 81.75,17.13" fill="#1F3D30"/><polygon points="85.05,32.01 87.99,34.95 95.78,27.90 92.10,24.22" fill="#1F3D30"/><polygon points="91.44,39.45 93.52,43.05 102.87,38.25 100.27,33.75" fill="#1F3D30"/><polygon points="95.68,48.29 96.76,52.30 107.04,50.09 105.69,45.07" fill="#1F3D30"/><circle cx="60" cy="60" r="34.5" fill="#8E9690"/><polygon points="90.38,51.49 84.33,59.95 81.56,57.98 87.61,49.52" fill="#191A19" stroke="none"/><polygon points="87.61,70.48 81.56,62.02 84.33,60.05 90.38,68.51" fill="#191A19" stroke="none"/><polygon points="87.50,75.47 77.24,77.17 76.68,73.82 86.94,72.11" fill="#191A19" stroke="none"/><polygon points="72.11,86.94 73.82,76.68 77.17,77.24 75.47,87.50" fill="#191A19" stroke="none"/><polygon points="68.51,90.38 60.05,84.33 62.02,81.56 70.48,87.61" fill="#191A19" stroke="none"/><polygon points="49.52,87.61 57.98,81.56 59.95,84.33 51.49,90.38" fill="#191A19" stroke="none"/><polygon points="44.53,87.50 42.83,77.24 46.18,76.68 47.89,86.94" fill="#191A19" stroke="none"/><polygon points="33.06,72.11 43.32,73.82 42.76,77.17 32.50,75.47" fill="#191A19" stroke="none"/><polygon points="29.62,68.51 35.67,60.05 38.44,62.02 32.39,70.48" fill="#191A19" stroke="none"/><polygon points="32.39,49.52 38.44,57.98 35.67,59.95 29.62,51.49" fill="#191A19" stroke="none"/><polygon points="32.50,44.53 42.76,42.83 43.32,46.18 33.06,47.89" fill="#191A19" stroke="none"/><polygon points="47.89,33.06 46.18,43.32 42.83,42.76 44.53,32.50" fill="#191A19" stroke="none"/><polygon points="51.49,29.62 59.95,35.67 57.98,38.44 49.52,32.39" fill="#191A19" stroke="none"/><polygon points="70.48,32.39 62.02,38.44 60.05,35.67 68.51,29.62" fill="#191A19" stroke="none"/><polygon points="75.47,32.50 77.17,42.76 73.82,43.32 72.11,33.06" fill="#191A19" stroke="none"/><polygon points="86.94,47.89 76.68,46.18 77.24,42.83 87.50,44.53" fill="#191A19" stroke="none"/><circle cx="60" cy="60" r="9" fill="#EDF0EE"/><rect x="57.5" y="49" width="5" height="3.5" fill="#EDF0EE"/><line x1="2" y1="60" x2="118" y2="60" stroke="#8E9690" stroke-dasharray="7 3 1.5 3"/><line x1="60" y1="2" x2="60" y2="118" stroke="#8E9690" stroke-dasharray="7 3 1.5 3"/><circle cx="60" cy="60" r="9" fill="none"/></g></svg>
+          <span class="ld vl ht" data-side="R" data-up="1" style="left:61.964%;top:15.625%;width:15.714%;height:7.109%"></span><span class="dt" style="left:61.964%;top:22.734%"></span><span class="lb r" style="left:79.018%;top:15.625%">고정자</span><span class="ld vl hb" data-side="R" data-up="0" style="left:68.527%;top:58.672%;width:9.152%;height:6.953%"></span><span class="dt" style="left:68.527%;top:58.672%"></span><span class="lb r" style="left:79.018%;top:65.625%">구리 코일</span><span class="ld vr ht" data-side="L" data-up="1" style="left:22.321%;top:34.375%;width:16.071%;height:11.484%"></span><span class="dt" style="left:38.393%;top:45.859%"></span><span class="lb l" style="right:79.018%;top:34.375%">영구 자석</span><span class="ld vr hb" data-side="L" data-up="0" style="left:22.321%;top:57.812%;width:22.321%;height:20.312%"></span><span class="dt" style="left:44.643%;top:57.812%"></span><span class="lb l" style="right:79.018%;top:78.125%">회전자</span>
+        </figure>
+        <blockquote class="q">미래차 전주기 실증 지원 체계 구축을 통한 미래차 산업 중심지 도약</blockquote>
+        <div class="rgs"><span class="rg-k">관련 권역</span><span class="rg-none">도내 전체 대상 공고로 지원</span></div>
+      </article>
+      <article class="dwg" data-dwg="ai">
+        <header class="dh">
+          <h3>AI</h3>
+          <p class="obj">AI 연산 모듈 단면</p>
+          <a class="cnt" href="#notices" data-sector="ICT·데이터">접수 중 공고 <b data-sc="ICT·데이터">0</b>건<span class="sl">ICT·데이터</span></a>
+        </header>
+        <figure class="fig">
+          <svg class="obj-svg" viewBox="0 0 120 120" style="left:23.214%;top:3.125%;width:53.571%;height:93.75%" role="img" aria-label="AI AI 연산 모듈 단면"><g stroke="#191A19" stroke-width="1.5" stroke-linejoin="miter" stroke-linecap="butt"><rect x="6" y="94" width="108" height="7" fill="#1F3D30"/><circle cx="33.00" cy="92" r="1.6" fill="#191A19" stroke="none"/><circle cx="39.75" cy="92" r="1.6" fill="#191A19" stroke="none"/><circle cx="46.50" cy="92" r="1.6" fill="#191A19" stroke="none"/><circle cx="53.25" cy="92" r="1.6" fill="#191A19" stroke="none"/><circle cx="60.00" cy="92" r="1.6" fill="#191A19" stroke="none"/><circle cx="66.75" cy="92" r="1.6" fill="#191A19" stroke="none"/><circle cx="73.50" cy="92" r="1.6" fill="#191A19" stroke="none"/><circle cx="80.25" cy="92" r="1.6" fill="#191A19" stroke="none"/><circle cx="87.00" cy="92" r="1.6" fill="#191A19" stroke="none"/><rect x="28" y="84" width="64" height="6" fill="#8E9690"/><rect x="42" y="78" width="36" height="6" fill="#191A19"/><rect x="20" y="58" width="80" height="20" fill="#8E9690"/><circle cx="44" cy="68" r="6" fill="#EDF0EE"/><circle cx="44" cy="68" r="4" fill="#24558C" stroke="none"/><circle cx="76" cy="68" r="6" fill="#EDF0EE"/><circle cx="76" cy="68" r="4" fill="#24558C" stroke="none"/><rect x="22.00" y="22" width="2.6" height="36" fill="#8E9690"/><rect x="28.60" y="22" width="2.6" height="36" fill="#8E9690"/><rect x="35.20" y="22" width="2.6" height="36" fill="#8E9690"/><rect x="41.80" y="22" width="2.6" height="36" fill="#8E9690"/><rect x="48.40" y="22" width="2.6" height="36" fill="#8E9690"/><rect x="55.00" y="22" width="2.6" height="36" fill="#8E9690"/><rect x="61.60" y="22" width="2.6" height="36" fill="#8E9690"/><rect x="68.20" y="22" width="2.6" height="36" fill="#8E9690"/><rect x="74.80" y="22" width="2.6" height="36" fill="#8E9690"/><rect x="81.40" y="22" width="2.6" height="36" fill="#8E9690"/><rect x="88.00" y="22" width="2.6" height="36" fill="#8E9690"/><rect x="94.60" y="22" width="2.6" height="36" fill="#8E9690"/><rect x="100" y="62" width="16" height="12" fill="#EDF0EE"/><rect x="100" y="65" width="16" height="6" fill="#24558C" stroke="none"/><line x1="100" y1="62" x2="116" y2="62"/><line x1="100" y1="74" x2="116" y2="74"/></g></svg>
+          <span class="ld h" data-side="L" data-up="0" style="left:22.321%;top:26.562%;width:11.295%;height:0.0%"></span><span class="dt" style="left:33.616%;top:26.562%"></span><span class="lb l" style="right:79.018%;top:26.562%">방열 핀</span><span class="ld vr ht" data-side="L" data-up="1" style="left:22.321%;top:48.438%;width:20.536%;height:7.812%"></span><span class="dt" style="left:42.857%;top:56.25%"></span><span class="lb l" style="right:79.018%;top:48.438%">냉수 유로</span><span class="ld h" data-side="L" data-up="0" style="left:22.321%;top:66.406%;width:22.321%;height:0.0%"></span><span class="dt" style="left:44.643%;top:66.406%"></span><span class="lb l" style="right:79.018%;top:66.406%">칩</span><span class="ld h" data-side="R" data-up="0" style="left:73.214%;top:56.25%;width:4.464%;height:0.0%"></span><span class="dt" style="left:73.214%;top:56.25%"></span><span class="lb r" style="left:79.018%;top:56.25%">냉수관</span><span class="ld h" data-side="R" data-up="0" style="left:69.643%;top:79.297%;width:8.036%;height:0.0%"></span><span class="dt" style="left:69.643%;top:79.297%"></span><span class="lb r" style="left:79.018%;top:79.297%">기판</span>
+        </figure>
+        <blockquote class="q">소양강댐의 냉수를 자원으로 한 클라우드데이터센터 7기가 집적단지인 K-클라우드파크를 조성하여 데이터 산업 융합밸리 구성</blockquote>
+        <div class="rgs"><span class="rg-k">관련 권역</span><button type="button" class="rg" data-city="춘천시" aria-pressed="false">춘천 소양강댐</button></div>
+      </article>
+      <div class="tblock">
+        <p><span>도면</span><b>강원테크노파크 주요 사업 6개 분야 단면</b></p>
+        <p><span>순서</span><b>원장 인사말에 적힌 분야 순서</b></p>
+        <p><span>문장 출처</span><b>2026 강원테크노파크 홍보영상 자막</b></p>
+        <p><span>공고 수</span><b data-asof-short>오늘 기준 접수 중 공고에서 자동 계산</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="eq" id="eq" aria-labelledby="et">
+    <div class="eq-in">
+      <div class="eq-main">
+        <h2 id="et">장비와 지원 바로가기</h2>
+        <p class="eq-lead">G-EQNET 강원연구장비에서 도내 기관이 함께 쓰는 연구장비를 찾을 수 있습니다.</p>
+        <div class="eq-nums">
+          <p><b data-count="29">29</b><span>등록기관</span></p>
+          <p><b data-count="1143">1,143</b><span>공동장비</span></p>
+        </div>
+        <p class="eq-asof">2026년 10월 28일 기준</p>
+        <a class="eq-go" href="https://eqnet.gwtp.or.kr/">강원연구장비 바로가기</a>
+      </div>
+      <div class="eq-links" data-systems></div>
+    </div>
+    <div class="strata" aria-hidden="true"><i></i><i></i><i></i></div>
+  </section>
+
+  <section class="sec fac" id="fac" aria-labelledby="ft">
+    <div class="sec-head row">
+      <div>
+        <h2 id="ft">입주 시설</h2>
+        <p class="lead">6개 시군 15곳을 서쪽 춘천부터 동쪽 삼척까지 지형 모형의 순서대로 묶었습니다.</p>
+      </div>
+      <div class="chips" role="group" aria-label="입주 시설 시군으로 거르기" data-chips="fac">
+        <button type="button" data-city="" aria-pressed="true">전체</button>
+        <button type="button" data-city="춘천시" aria-pressed="false">춘천</button>
+        <button type="button" data-city="홍천군" aria-pressed="false">홍천</button>
+        <button type="button" data-city="원주시" aria-pressed="false">원주</button>
+        <button type="button" data-city="강릉시" aria-pressed="false">강릉</button>
+        <button type="button" data-city="태백시" aria-pressed="false">태백</button>
+        <button type="button" data-city="삼척시" aria-pressed="false">삼척</button>
+      </div>
+    </div>
+    <ol class="fgrid" data-fac></ol>
+  </section>
+
+  <section class="sec news" id="news" aria-labelledby="nwt">
+    <div class="sec-head row">
+      <div>
+        <h2 id="nwt">소식</h2>
+        <p class="lead">TP NOW 보도자료와 공지사항</p>
+      </div>
+      <a class="more" href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub06b&amp;keyvalue=sub06">보도자료 전체 보기</a>
+    </div>
+    <div class="ngrid">
+      <ol class="press" data-press></ol>
+      <div class="ntc">
+        <h3>공지사항</h3>
+        <ol data-ntc></ol>
+        <a class="more" href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01a&amp;keyvalue=sub01">공지사항 전체 보기</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="f-in">
+    <div class="f-org">
+      <img src="../shared/img/logo-white.png" alt="강원테크노파크" width="300" height="72">
+      <p class="f-name">재단법인 강원테크노파크</p>
+      <address>(24206) 강원특별자치도 춘천시 신북읍 신북로 61-10<br>강원테크노파크 기술혁신지원센터</address>
+      <p class="f-tel">대표전화 <a href="tel:033-248-5600">033-248-5600</a></p>
+    </div>
+    <nav class="f-menu" aria-label="바닥글 메뉴">
+      <h2>메뉴</h2>
+      <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01a&amp;keyvalue=sub01">공고안내</a>
+      <a href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub02a&amp;keyvalue=sub02">사업안내</a>
+      <a href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub04a&amp;keyvalue=sub04">입주안내</a>
+      <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub05a&amp;keyvalue=sub05">경영공시</a>
+      <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub06a&amp;keyvalue=sub06">TP NOW</a>
+      <a href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub07a&amp;keyvalue=sub07">TP소개</a>
+    </nav>
+    <div class="f-sys">
+      <h2>관련 사이트</h2>
+      <div data-fsys></div>
+    </div>
+  </div>
+  <div class="f-bot">
+    <a href="https://www.gwtp.or.kr/">이용약관</a>
+    <a href="https://www.gwtp.or.kr/"><b>개인정보처리방침</b></a>
+    <p>Copyright 재단법인 강원테크노파크. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../shared/base.js"></script>
+<script src="../shared/gw-map.js"></script>
+<script src="../shared/notices.js"></script>
+<script src="../shared/gw-core.js"></script>
+<script src="../shared/home-lists.js"></script>
+<script src="../shared/facilities.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
